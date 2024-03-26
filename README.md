@@ -14,7 +14,7 @@ This project was developed as part of a training program for certified technicia
 
 ## Features
 
-The Pocket Game is a Reaction Game with three LEDs, three switches, and an ON/OFF switch. The casing was designed using 3D printing and Autodesk Fusion 360. The circuit board was created with EasyEDA. Inside the casing, there's a lithium-ion battery providing several hours of runtime, which can be charged via USB-C.
+The Pocket Game is a Reaction Game with three LEDs, three switches, and an ON/OFF switch. The casing was designed using 3D printing and Autodesk Fusion 360. The circuit board was created with EasyEDA. Inside the casing, there's a lithium-polymer battery providing several hours of runtime, which can be charged via USB-C.
 
 ## Gameplay
 
@@ -24,7 +24,10 @@ The game operates as follows: Upon pressing the START button, the middle white L
 
     Casing: 3D-printed casing measuring 2.5 cm x 4 cm x 6 cm (H x W x D)
     Circuit Board: Designed using EasyEDA
-    Power Supply: Lithium-ion battery with USB-C charging capability
+    Switches: 3x 12v/DC 50mA
+    LEDs: 2x 5mm LED in Green, 1x 5mm LED in White
+    Microcontroller: Beetle ESP32 with USB-C charging capability
+    Power Supply: EEMB 3.7V 150mAh Lithium Polymer Battery
 
 ## Pictures
 
