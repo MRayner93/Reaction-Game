@@ -11,18 +11,15 @@ switch3 = Pin(7, Pin.IN, Pin.PULL_UP)
 
 ### Functions ####
 
-# Blinking of LED2
-def blink_led2():
+# light up LED2
+def light_led2():
     led2.value(1)
-    time.sleep(0.5)
-    led2.value(0)
-    time.sleep(0.5)
 
 # random delay
 def random_delay():
     delay = random.randint(3, 10)
     for i in range(delay):
-        blink_led2()
+        light_led2()
 
 # Activation of LED1 or LED3 based on the selected switch
 def activate_led(switch, led):
@@ -34,9 +31,8 @@ def activate_led(switch, led):
 # Start Game
 while True:
     if not switch3.value():
-        # LED2 blinks for a random delay
+        # LED2 lights up for a random delay
         random_delay()
-        led2.value(0)
         
         # Waiting for input from switch1 or switch2
         start_time = time.time()
