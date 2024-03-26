@@ -9,32 +9,36 @@ switch1 = Pin(21, Pin.IN, Pin.PULL_UP)
 switch2 = Pin(20, Pin.IN, Pin.PULL_UP)
 switch3 = Pin(7, Pin.IN, Pin.PULL_UP)
 
-# Blinken von LED2
+### Functions ####
+
+# Blinking of LED2
 def blink_led2():
     led2.value(1)
     time.sleep(0.5)
     led2.value(0)
     time.sleep(0.5)
 
-# Zufällige Verzögerung
+# random delay
 def random_delay():
     delay = random.randint(3, 10)
     for i in range(delay):
         blink_led2()
 
-# Aktivierung von LED1 oder LED3 basierend auf dem gewählten Schalter
+# Activation of LED1 or LED3 based on the selected switch
 def activate_led(switch, led):
     if not switch.value():
         led.value(1)
 
-# Spielstart
+### Loop ###
+
+# Start Game
 while True:
     if not switch3.value():
-        # LED2 blinkt für eine zufällige Verzögerung
+        # LED2 blinks for a random delay
         random_delay()
         led2.value(0)
         
-        # Warten auf Eingabe von switch1 oder switch2
+        # Waiting for input from switch1 or switch2
         start_time = time.time()
         while True:
             if not switch1.value():
@@ -46,20 +50,20 @@ while True:
                 print("Switch 2 pressed")
                 break
                 
-            # Überprüfen, ob Zeit abgelaufen ist
+            # Checking if time has elapsed
             current_time = time.time()
-            if current_time - start_time > 5:  # Zeitlimit von 5 Sekunden
+            if current_time - start_time > 5:  # Timelimit of 5 Seconds
                 print("Time's up!")
                 break
                 
-        # Überprüfen, welcher Schalter zuerst gedrückt wurde
+        # Checking which switch was pressed first
         if led1.value():
             print("Switch 1 wins!")
             time.sleep(5)
         elif led3.value():
             print("Switch 2 wins!")
             time.sleep(5)
-        # Spielende
+        # Game ends
         led1.value(0)
         led3.value(0)
         time.sleep(1)
