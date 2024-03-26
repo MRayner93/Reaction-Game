@@ -31,6 +31,9 @@ The game operates as follows: Upon pressing the START button, the middle white L
 
 ## Pictures
 
+<img src="/images/case.png" alt="Image of the reaction game case." width="400" height="300">
+<img src="/images/case_measuring.png" alt="Image of the reaction game case." width="800" height="300">
+
 ## Usage
 
     1. Turn on the game using the ON/OFF switch.
