@@ -1,3 +1,8 @@
+"""
+Author: Merlin Rayner
+Version: 1.0
+"""
+
 import random
 import time
 from machine import Pin
