@@ -22,7 +22,7 @@ The game operates as follows: Upon pressing the START button, the middle white L
 
 ## Technical Details
 
-    Casing: 3D-printed casing measuring 2.5 cm x 4 cm x 6 cm (H x W x D)
+    Casing: 3D-printed casing
     Circuit Board: Designed using EasyEDA
     Switches: 3x 12v/DC 50mA
     LEDs: 2x 5mm LED in Green, 1x 5mm LED in White
