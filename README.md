@@ -1,6 +1,6 @@
 # Reaction Game
 
-This project was developed as part of a training program for certified technicians. The challenge was to create a "Pocket Game" that fits within a casing measuring 2.5 cm x 4 cm x 6 cm (H x W x D).
+This project was developed as part of a trainee program for certified technicians. The challenge was to create a "Pocket Game" that fits within a casing measuring 2.5 cm x 4 cm x 6 cm (H x W x D).
 
 
 ## Table of Contents
